@@ -11,6 +11,10 @@ h2 {
 .questions h2 {
   font-weight: 600;
 }
+button {
+  outline: none !important;
+  border: none !important;
+}
 body {
   background: #007bff;
   background: linear-gradient(to right, #DDD, #FFF);
@@ -25,6 +29,9 @@ body {
   vertical-align: middle;
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  transform: rotate(-13deg);
+  z-index: 3;
 }
 /* .questions button {
   padding: 0;
@@ -40,7 +47,7 @@ body {
   min-width: 40%;
   display: inline-block;
   transition: all .2s linear;
-  margin: 0 5px;
+  margin: 20px 5px;
   box-shadow: 0px 0px 15px #000;
 }
 .material-icons {
@@ -178,7 +185,7 @@ body {
   background: #756c6c;
 }
 .img-thumbnail {
-  border: 10px solid #57595b;
+  border: 3px solid #fff;
 }
 .btn-yes,
 a.btn-yes {
@@ -208,7 +215,7 @@ a.btn-yes {
   text-align: center;
   background-color: rgba(23,3,37,.7);
   border-radius: 2.2rem;
-  padding: 10px 35px;
+  padding: 10px 35px 100px;
 }
 .questiontitle {
   color: #fff444;
@@ -370,9 +377,21 @@ a.btn-yes {
   font-size: 1rem;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-  color: #fff!important;
-  background-color: 099eff!important;
-  border-color: #005cbf!important;
+    /* color: #fff!important; */
+    background-color: transparent;
+}
+.tick {
+  display: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active .tick {
+  display: inline;
+}
+/* , 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle */
+{
+
+  background-color: transparent;
 }
 .topclose{
   position: fixed !important;
@@ -387,4 +406,13 @@ a.btn-yes {
   padding:0 2px;
   font-weight: bolder;
   margin:0 !important;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  #carousel {
+    position: relative;
+  }
+  .questionside {
+    padding: 10px 35px;
+}
 }
