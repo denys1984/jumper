@@ -76,9 +76,17 @@
         <!--intro-->
         <div class="questions row step" style="display:block;">
           <div class="col-12">
-            <h1 class="card-title text-center">
+            <!-- <h1 class="card-title text-center">
               WICHTIG!
-            </h1>
+            </h1> -->
+
+            <div class="animate three">
+              <span>W</span><span>I</span><span>C</span><span>H</span><span>T</span><span>I</span><span>G</span><span>!</span>
+            </div>
+
+
+
+
             <div class="large_text">
               <h2>
                 DIES IST KEINE DATING-WEBSITE.
@@ -436,7 +444,18 @@
     </div>
   </div>
 
-
+<script>
+  $(function(){
+	$('.repeat').click(function(){
+    	var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+        	$(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+</script>
 </body>
 
 
