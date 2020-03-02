@@ -76,6 +76,8 @@ a.btn-yes {
 }
 .questionside {
   text-align: center;
+  background-color: rgba(23,3,37,.5);
+  border-radius: 2.2rem;
 }
 .questiontitle {
   color: #67a3ed;

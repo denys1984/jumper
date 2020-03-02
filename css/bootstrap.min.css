@@ -2841,11 +2841,10 @@
     flex-direction:column;
     min-width:0;
     word-wrap:break-word;
-    background-color:#00000087;
     background-clip:border-box;
     border:1px solid rgba(0,0,0,.125);
-    border-radius:.25rem;
     color: white;
+    margin-top: 10px;
   }
   .card>hr{
     margin-right:0;
